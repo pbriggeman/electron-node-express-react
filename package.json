@@ -1,0 +1,23 @@
+{
+  "name": "electron-node-express-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "concurrently": "^3.5.0",
+    "electron": "^1.6.11",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.10",
+    "wait-on": "^2.0.2"
+  },
+  "main": "electron-starter.js",
+  "scripts": {
+    "start": "concurrently \"node ./server/bin/www\" \"npm run react\" \"wait-on http://localhost:3001 && wait-on http://localhost:3000 && npm run electron\"",
+    "react": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron ."
+  },
+  "devDependencies": {}
+}
