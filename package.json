@@ -4,11 +4,12 @@
   "private": true,
   "dependencies": {
     "concurrently": "^3.5.0",
-    "electron": "^1.6.11",
+    "electron": "^1.8.8",
+    "hoek": "^5.0.3",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.10",
-    "wait-on": "^2.0.2"
+    "react-scripts": "^3.2.0",
+    "wait-on": "^3.3.0"
   },
   "main": "electron-starter.js",
   "scripts": {
